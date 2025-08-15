@@ -15,7 +15,6 @@ mkdir -p "$RELEASE_DIR"
 if [ -f "$ARTIFACTS_DIR/zed-release/zed.exe" ]; then
     echo "Found Vulkan build, adding to release..."
     mv "$ARTIFACTS_DIR/zed-release/zed.exe" "$RELEASE_DIR/zed.exe"
-    zip -j "$RELEASE_DIR/zed.zip" -9 "$RELEASE_DIR/zed.exe"
 fi
 
 # Generate checksums for existing files in release folder
